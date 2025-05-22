@@ -1,0 +1,434 @@
+[
+  {
+    "productId": "102298404",
+    "title": "Apple iPhone 13 128Gb черный",
+    "price": "263700₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h32/h70/84378448199710.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(4257 отзывов)"
+  },
+  {
+    "productId": "102298420",
+    "title": "Apple iPhone 13 128Gb белый",
+    "price": "260320₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hc9/h90/64209083007006.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(2479 отзывов)"
+  },
+  {
+    "productId": "113137790",
+    "title": "Apple iPhone 15 128Gb черный",
+    "price": "349855₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-128gb-chernyi-113137790/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h1d/hfc/86303745998878.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(2441 отзыв)"
+  },
+  {
+    "productId": "114695323",
+    "title": "Xiaomi Redmi 13C 8 ГБ/256 ГБ черный",
+    "price": "47717₸",
+    "link": "https://kaspi.kz/shop/p/xiaomi-redmi-13c-8-gb-256-gb-chernyi-114695323/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h1b/h77/84526902706206.jpg?format=preview-large",
+    "rating": 4.5,
+    "description": "(2897 отзывов)"
+  },
+  {
+    "productId": "123890547",
+    "title": "Apple iPhone 16 Pro Max 256Gb золотистый",
+    "price": "616982₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-16-pro-max-256gb-zolotistyi-123890547/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h41/h98/87295491702814.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(905 отзывов)"
+  },
+  {
+    "productId": "100692388",
+    "title": "Apple iPhone 11 128Gb Slim Box черный",
+    "price": "270000₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hd8/hac/63897052413982.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(4163 отзыва)"
+  },
+  {
+    "productId": "102298364",
+    "title": "Apple iPhone 13 128Gb синий",
+    "price": "269186₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hba/h2e/64206204993566.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(2152 отзыва)"
+  },
+  {
+    "productId": "113137929",
+    "title": "Apple iPhone 15 128Gb голубой",
+    "price": "371906₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-128gb-goluboi-113137929/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h01/h5f/86303746293790.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(883 отзыва)"
+  },
+  {
+    "productId": "113138420",
+    "title": "Apple iPhone 15 Pro Max 256Gb серый",
+    "price": "652613₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-pro-max-256gb-seryi-113138420/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/ha3/hda/86319874048030.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(2311 отзывов)"
+  },
+  {
+    "productId": "123889224",
+    "title": "Apple iPhone 16 Pro 256Gb золотистый",
+    "price": "598705₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-16-pro-256gb-zolotistyi-123889224/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h20/hd4/87295486591006.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(677 отзывов)"
+  },
+  {
+    "productId": "102298145",
+    "title": "Apple iPhone 13 128Gb розовый",
+    "price": "307521₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-13-128gb-rozovyi-102298145/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h16/h64/64000133005342.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(1502 отзыва)"
+  },
+  {
+    "productId": "113138415",
+    "title": "Apple iPhone 15 Pro Max 1Tb черный",
+    "price": "748719₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-pro-max-1tb-chernyi-113138415/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hfa/h3e/86319871361054.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(127 отзывов)"
+  },
+  {
+    "productId": "123887732",
+    "title": "Apple iPhone 16 Pro 256Gb черный",
+    "price": "609577₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-16-pro-256gb-chernyi-123887732/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hbc/h31/87295483445278.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(585 отзывов)"
+  },
+  {
+    "productId": "123429834",
+    "title": "Samsung Galaxy A06 6 ГБ/128 ГБ черный",
+    "price": "64449₸",
+    "link": "https://kaspi.kz/shop/p/samsung-galaxy-a06-6-gb-128-gb-chernyi-123429834/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hf2/h00/87088029925406.jpg?format=preview-large",
+    "rating": 4.8,
+    "description": "(265 отзывов)"
+  },
+  {
+    "productId": "123787019",
+    "title": "Apple iPhone 16 Pro 128Gb черный",
+    "price": "542832₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-16-pro-128gb-chernyi-123787019/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h8d/h0d/87295483052062.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(280 отзывов)"
+  },
+  {
+    "productId": "113137929",
+    "title": "Apple iPhone 15 128Gb голубой",
+    "price": "378049₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-128gb-goluboi-113137929/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h01/h5f/86303746293790.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(883 отзыва)"
+  },
+  {
+    "productId": "130609939",
+    "title": "Samsung Galaxy A16 6 ГБ/128 ГБ серый",
+    "price": "80942₸",
+    "link": "https://kaspi.kz/shop/p/samsung-galaxy-a16-6-gb-128-gb-seryi-130609939/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/p13/pf5/10325887.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(169 отзывов)"
+  },
+  {
+    "productId": "123156529",
+    "title": "Samsung Galaxy A06 4 ГБ/64 ГБ черный",
+    "price": "50188₸",
+    "link": "https://kaspi.kz/shop/p/samsung-galaxy-a06-4-gb-64-gb-chernyi-123156529/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hba/h84/87014305824798.png?format=preview-large",
+    "rating": 4.8,
+    "description": "(207 отзывов)"
+  },
+  {
+    "productId": "123728177",
+    "title": "Apple iPhone 16 256Gb черный",
+    "price": "494765₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-16-256gb-chernyi-123728177/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h52/h3f/87295472795678.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(251 отзыв)"
+  },
+  {
+    "productId": "116932148",
+    "title": "Xiaomi Redmi A3 4 ГБ/128 ГБ черный",
+    "price": "40499₸",
+    "link": "https://kaspi.kz/shop/p/xiaomi-redmi-a3-4-gb-128-gb-chernyi-116932148/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h96/hb5/85262959706142.png?format=preview-large",
+    "rating": 4.7,
+    "description": "(662 отзыва)"
+  },
+  {
+    "productId": "102298364",
+    "title": "Apple iPhone 13 128Gb синий",
+    "price": "269201₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hba/h2e/64206204993566.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(2152 отзыва)"
+  },
+  {
+    "productId": "113137897",
+    "title": "Apple iPhone 15 256Gb черный",
+    "price": "425649₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-15-256gb-chernyi-113137897/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h16/hb1/86303746097182.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(570 отзывов)"
+  },
+  {
+    "productId": "133574875",
+    "title": "Xiaomi Redmi Note 14 8 ГБ/256 ГБ черный",
+    "price": "97459₸",
+    "link": "https://kaspi.kz/shop/p/xiaomi-redmi-note-14-8-gb-256-gb-chernyi-133574875/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/pa4/p79/20744914.JPG?format=preview-large",
+    "rating": 4.9,
+    "description": "(201 отзыв)"
+  },
+  {
+    "productId": "106363023",
+    "title": "Apple iPhone 14 128Gb черный",
+    "price": "302854₸",
+    "link": "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hb8/h19/86042949648414.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(1961 отзыв)"
+  },
+  {
+    "productId": "106185651",
+    "title": "Для Apple iPhone 13 прозрачный",
+    "price": "30₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-13-prozrachnyi-106185651/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h5c/hec/86261115060254.png?format=preview-large",
+    "rating": 4.9,
+    "description": "(5336 отзывов)"
+  },
+  {
+    "productId": "100984093",
+    "title": "Apple 20W USB-C Power Adapter белый",
+    "price": "1998₸",
+    "link": "https://kaspi.kz/shop/p/apple-20w-usb-c-power-adapter-belyi-100984093/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h95/h0e/63961934823454.jpg?format=preview-large",
+    "rating": 4.7,
+    "description": "(4483 отзыва)"
+  },
+  {
+    "productId": "103661424",
+    "title": "Для Apple iPhone 11 прозрачный",
+    "price": "28₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-11-prozrachnyi-103661424/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h53/hf3/86260519796766.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(4728 отзывов)"
+  },
+  {
+    "productId": "102743952",
+    "title": "Apple 18W USB-C Power Adapter USB Type-C белый",
+    "price": "6163₸",
+    "link": "https://kaspi.kz/shop/p/apple-18w-usb-c-power-adapter-usb-type-c-belyi-102743952/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h1b/hd6/64377056231454.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(3355 отзывов)"
+  },
+  {
+    "productId": "107664472",
+    "title": "Для Apple iPhone 14 прозрачный",
+    "price": "60₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-14-prozrachnyi-107664472/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hb0/h19/65986384560158.jpg?format=preview-large",
+    "rating": 5,
+    "description": "(2170 отзывов)"
+  },
+  {
+    "productId": "113282783",
+    "title": "Для Apple iPhone 15 Pro прозрачный",
+    "price": "28₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-15-pro-prozrachnyi-113282783/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hfe/hea/83724869828638.jpg?format=preview-large",
+    "rating": 5,
+    "description": "(2159 отзывов)"
+  },
+  {
+    "productId": "40500508",
+    "title": "Кабель Apple Lightning (M), USB TypeC (M) белый",
+    "price": "1000₸",
+    "link": "https://kaspi.kz/shop/p/kabel-apple-lightning-m-usb-typec-m-belyi-40500508/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h4b/hd8/87059455311902.png?format=preview-large",
+    "rating": 4.7,
+    "description": "(702 отзыва)"
+  },
+  {
+    "productId": "122283935",
+    "title": "Попсокет розовый",
+    "price": "98₸",
+    "link": "https://kaspi.kz/shop/p/popsoket-rozovyi-122283935/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/heb/h6f/86759516209182.png?format=preview-large",
+    "rating": 4.4,
+    "description": "(100 отзывов)"
+  },
+  {
+    "productId": "100322086",
+    "title": "Xiaomi Redmi Power Bank 20000 мАч черный",
+    "price": "4150₸",
+    "link": "https://kaspi.kz/shop/p/xiaomi-redmi-power-bank-20000-mach-chernyi-100322086/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h34/h07/63928978014238.jpg?format=preview-large",
+    "rating": 4.5,
+    "description": "(1598 отзывов)"
+  },
+  {
+    "productId": "124504364",
+    "title": "EMY для Apple iPhone 16 Pro прозрачный",
+    "price": "49₸",
+    "link": "https://kaspi.kz/shop/p/emy-dlja-apple-iphone-16-pro-prozrachnyi-124504364/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h49/hb4/87349468266526.jpg?format=preview-large",
+    "rating": 5,
+    "description": "(684 отзыва)"
+  },
+  {
+    "productId": "124250944",
+    "title": "Для Apple iPhone 16 Pro Max прозрачный",
+    "price": "40₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-16-pro-max-prozrachnyi-124250944/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h2f/h48/87285032943646.jpg?format=preview-large",
+    "rating": 5,
+    "description": "(776 отзывов)"
+  },
+  {
+    "productId": "110688209",
+    "title": "Кабель GERLAX USB 2.0 (M), micro-USB 2.0 (M) белый",
+    "price": "50₸",
+    "link": "https://kaspi.kz/shop/p/kabel-gerlax-usb-2-0-m-micro-usb-2-0-m-belyi-110688209/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/he8/h66/81102277247006.jpg?format=preview-large",
+    "rating": 4.8,
+    "description": "(66 отзывов)"
+  },
+  {
+    "productId": "110564899",
+    "title": "JS0000084 серебристый",
+    "price": "424₸",
+    "link": "https://kaspi.kz/shop/p/js0000084-serebristyi-110564899/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h02/h92/80944372514846.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(345 отзывов)"
+  },
+  {
+    "productId": "113282830",
+    "title": "Для Apple iPhone 15 прозрачный",
+    "price": "70₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-15-prozrachnyi-113282830/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h37/heb/83726315159582.jpg?format=preview-large",
+    "rating": 5,
+    "description": "(1360 отзывов)"
+  },
+  {
+    "productId": "122704410",
+    "title": "Попсокет 7809 белый",
+    "price": "99₸",
+    "link": "https://kaspi.kz/shop/p/popsoket-7809-belyi-122704410/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h78/h35/86894771077150.png?format=preview-large",
+    "rating": 4.5,
+    "description": "(71 отзыв)"
+  },
+  {
+    "productId": "107186268",
+    "title": "Для Apple iPhone 14 Pro Max прозрачный",
+    "price": "55₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-14-pro-max-prozrachnyi-107186268/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hf6/h12/86261135704094.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(1316 отзывов)"
+  },
+  {
+    "productId": "106897965",
+    "title": "Xiaomi MDY-12 ES 67W USB Type-C, USB белый",
+    "price": "1449₸",
+    "link": "https://kaspi.kz/shop/p/xiaomi-mdy-12-es-67w-usb-type-c-usb-belyi-106897965/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/hfb/h89/86156073730078.png?format=preview-large",
+    "rating": 4.2,
+    "description": "(656 отзывов)"
+  },
+  {
+    "productId": "108450817",
+    "title": "Стекло для Apple iPhone 11 черный",
+    "price": "136₸",
+    "link": "https://kaspi.kz/shop/p/steklo-dlja-apple-iphone-11-chernyi-108450817/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/ha9/h3b/67897720340510.jpg?format=preview-large",
+    "rating": 4.7,
+    "description": "(485 отзывов)"
+  },
+  {
+    "productId": "114949538",
+    "title": "Кабель USB TypeC (M), Lightning белый",
+    "price": "285₸",
+    "link": "https://kaspi.kz/shop/p/kabel-usb-typec-m-lightning-belyi-114949538/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h47/hfa/84599409541150.jpg?format=preview-large",
+    "rating": 4.5,
+    "description": "(201 отзыв)"
+  },
+  {
+    "productId": "128618492",
+    "title": "Попсокет розовый",
+    "price": "106₸",
+    "link": "https://kaspi.kz/shop/p/popsoket-rozovyi-128618492/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/p5b/p55/3509966.jpeg?format=preview-large",
+    "rating": 4.5,
+    "description": "(71 отзыв)"
+  },
+  {
+    "productId": "107656268",
+    "title": "Подставка Afkas-nova AK-37 черный",
+    "price": "354₸",
+    "link": "https://kaspi.kz/shop/p/podstavka-afkas-nova-ak-37-chernyi-107656268/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h33/haf/65966324580382.jpg?format=preview-large",
+    "rating": 4.7,
+    "description": "(449 отзывов)"
+  },
+  {
+    "productId": "108289293",
+    "title": "для Apple iPhone 13 прозрачный",
+    "price": "280₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-13-prozrachnyi-108289293/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/ha6/hd8/67479275896862.jpg?format=preview-large",
+    "rating": 4.7,
+    "description": "(149 отзывов)"
+  },
+  {
+    "productId": "113767097",
+    "title": "Для Apple iPhone 13 черный",
+    "price": "599₸",
+    "link": "https://kaspi.kz/shop/p/dlja-apple-iphone-13-chernyi-113767097/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/h4a/h2a/84622225866782.jpg?format=preview-large",
+    "rating": 4.9,
+    "description": "(241 отзыв)"
+  },
+  {
+    "productId": "129762606",
+    "title": "PS101 Lightning белый",
+    "price": "750₸",
+    "link": "https://kaspi.kz/shop/p/ps101-lightning-belyi-129762606/?c=750000000",
+    "image": "https://resources.cdn-kaspi.kz/img/m/p/p97/p4c/7370981.png?format=preview-large",
+    "rating": 4.2,
+    "description": "(86 отзывов)"
+  }
+]

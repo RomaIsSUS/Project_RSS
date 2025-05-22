@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Phone Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/img/logo.jpeg" />
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .search-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      min-width: 250px;
+    }
+    #search-input {
+      width: 0;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+      transition: width 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+    }
+    #search-input.active {
+      width: 200px;
+      opacity: 1;
+      position: relative;
+    }
+    #search-btn {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .notification {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 1000;
+    }
+    .notification.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .notification.error {
+      background-color: #f44336;
+    }
+    .auth {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logos {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .brand-logos img {
+      width: 40px;
+      height: auto;
+      transition: transform 0.2s ease;
+    }
+    .brand-logos img:hover {
+      transform: scale(1.2);
+    }
+    .brand-logos img.active {
+      outline: 2px solid #2196f3;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/" class="logo-block">
+        <img src="/img/logo.jpeg" alt="Logo" class="site-logo" />
+        <span class="site-name">Smart Phone Shop</span>
+      </a>
+      <div class="menu-links">
+        <a href="/">Главная</a>
+        <a href="/about.html">О нас</a>
+        <a href="/cart.html">Корзина</a>
+        <a href="/contacts.html">Контакты</a>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Поиск..." />
+        <button id="search-btn">🔍</button>
+      </div>
+    </div>
+    <div class="auth">
+      <a href="#" id="login-btn">Вход</a>
+      <a href="#" id="register-btn">Регистрация</a>
+    </div>
+  </nav>
+
+  <section class="brand-logos">
+    <img src="/img/logo.jpeg" alt="Все" title="Все" class="brand-filter active" data-brand="all" />
+    <img src="/img/apple.png" alt="Apple" title="Apple" class="brand-filter" data-brand="apple" />
+    <img src="/img/samsung.png" alt="Samsung" title="Samsung" class="brand-filter" data-brand="samsung" />
+    <img src="/img/xiaomi.png" alt="Xiaomi" title="Xiaomi" class="brand-filter" data-brand="xiaomi" />
+    <img src="/img/huawei.png" alt="Huawei" title="Huawei" class="brand-filter" data-brand="huawei" />
+    <img src="/img/oppo.png" alt="Oppo" title="Asus" class="brand-filter" data-brand="oppo" />
+  </section>
+
+  <h1 style="text-align:center; margin-top: 30px;">Smart Phone Shop 🛒📱💻</h1>
+  <div id="products">Загрузка товаров...</div>
+
+  <div id="login-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Вход</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Пароль" />
+      <button id="login-submit">Войти</button>
+    </div>
+  </div>
+
+  <div id="register-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Регистрация</h2>
+      <input type="text" placeholder="Имя" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Пароль" />
+      <button id="register-submit">Зарегистрироваться</button>
+    </div>
+  </div>
+
+
+  <script>
+  let allProducts = [];
+
+  function formatPrice(price) {
+    const num = parseInt(price.toString().replace(/\D/g, ""));
+    return isNaN(num) ? "0" : num.toLocaleString("ru-RU");
+  }
+
+  function addToCart(title) {
+  const product = allProducts.find(p => p.title === title);
+  if (!product) return;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  showNotification(`«${product.title}» добавлен в корзину`);
+}
+
+
+  function renderProducts(products) {
+    const container = document.getElementById("products");
+    container.innerHTML = "";
+
+    if (products.length === 0) {
+      container.innerHTML = "<p>Нет совпадений 😕</p>";
+      return;
+    }
+
+    products.forEach((p) => {
+      const price = formatPrice(p.price);
+      const div = document.createElement("div");
+      div.className = "product";
+      div.innerHTML = `
+        <div class="product-image-container">
+          <img src="${p.image}" alt="${p.title}" class="product-image">
+        </div>
+        <div class="product-info">
+          <a href="${p.link}" target="_blank" class="product-title">${p.title}</a>
+          <div class="product-price">${price} ₸</div>
+          <div class="product-rating" style="--percent: ${(p.rating / 5) * 100}%" title="${p.rating.toFixed(1)} из 5"></div>
+          <span class="rating-value">${p.rating.toFixed(1)}</span>
+          <div class="product-reviews">${p.description}</div>
+          <div class="product-buttons">
+            <button class="add-to-cart" onclick="addToCart('${p.title.replace(/'/g, "\\'")}')">В корзину</button>
+            <a href="${p.link}" target="_blank"><button class="buy-now">Купить</button></a>
+          </div>
+        </div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  fetch("/products")
+    .then((res) => res.json())
+    .then((products) => {
+      allProducts = products;
+      renderProducts(products);
+    })
+    .catch((err) => {
+      document.getElementById("products").innerText = "Ошибка загрузки товаров 😞";
+      console.error(err);
+    });
+
+  document.getElementById("search-btn").addEventListener("click", () => {
+    const input = document.getElementById("search-input");
+    input.classList.toggle("active");
+    if (input.classList.contains("active")) input.focus();
+  });
+
+  document.getElementById("search-input").addEventListener("input", () => {
+    const query = document.getElementById("search-input").value.toLowerCase();
+    const filtered = allProducts.filter((p) =>
+      p.title.toLowerCase().includes(query)
+    );
+    renderProducts(filtered);
+  });
+
+  document.querySelectorAll(".brand-filter").forEach((logo) => {
+    logo.addEventListener("click", () => {
+      document.querySelectorAll(".brand-filter").forEach((el) =>
+        el.classList.remove("active")
+      );
+      logo.classList.add("active");
+
+      const brand = logo.dataset.brand.toLowerCase();
+      if (brand === "all") {
+        renderProducts(allProducts);
+      } else {
+        const filtered = allProducts.filter((p) =>
+          p.title.toLowerCase().includes(brand)
+        );
+        renderProducts(filtered);
+      }
+    });
+  });
+
+  const loginModal = document.getElementById("login-modal");
+  const registerModal = document.getElementById("register-modal");
+  const closeButtons = document.querySelectorAll(".modal .close");
+
+  document.getElementById("login-btn").addEventListener("click", () => {
+    loginModal.classList.remove("hidden");
+  });
+
+  document.getElementById("register-btn").addEventListener("click", () => {
+    registerModal.classList.remove("hidden");
+  });
+
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      loginModal.classList.add("hidden");
+      registerModal.classList.add("hidden");
+    });
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === loginModal || e.target === registerModal) {
+      loginModal.classList.add("hidden");
+      registerModal.classList.add("hidden");
+    }
+  });
+
+  function showNotification(message, isError = false) {
+    const notif = document.getElementById("notification");
+    notif.textContent = message;
+    notif.className = "notification show" + (isError ? " error" : "");
+    setTimeout(() => {
+      notif.classList.remove("show");
+    }, 3000);
+  }
+
+  document.getElementById("login-submit").addEventListener("click", () => {
+    loginModal.classList.add("hidden");
+    showNotification("Добро пожаловать!");
+    document.querySelector("#login-btn").textContent = "Профиль";
+    document.querySelector("#register-btn").style.display = "none";
+  });
+
+  document.getElementById("register-submit").addEventListener("click", () => {
+    registerModal.classList.add("hidden");
+    showNotification("Регистрация прошла успешно!");
+    document.querySelector("#login-btn").textContent = "Профиль";
+    document.querySelector("#register-btn").style.display = "none";
+  });
+</script>
+
+</body>
+  <div id="notification" class="notification"></div>
+
+</html>

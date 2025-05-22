@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Корзина</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .cart-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-item img {
+      width: 80px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .cart-details {
+      flex: 1;
+    }
+    .cart-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #f44336;
+    }
+    .remove-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/" class="logo-block">
+        <img src="/img/logo.jpeg" alt="Logo" class="site-logo" />
+        <span class="site-name">Smart Phone Shop</span>
+      </a>
+      <div class="menu-links">
+        <a href="/">Главная</a>
+        <a href="/about.html">О нас</a>
+        <a href="/cart.html">Корзина</a>
+        <a href="/contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Ваша корзина</h1>
+    <div id="cart-container">Загрузка...</div>
+  </main>
+
+  <script>
+    function formatPrice(price) {
+      const num = parseInt(price.toString().replace(/\D/g, ""));
+      return isNaN(num) ? "0" : num.toLocaleString("ru-RU");
+    }
+
+    function loadCart() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const container = document.getElementById("cart-container");
+
+      if (cart.length === 0) {
+        container.innerHTML = "<p>Корзина пуста 😔</p>";
+        return;
+      }
+
+      container.innerHTML = "";
+      cart.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" />
+          <div class="cart-details">
+            <a href="${item.link}" target="_blank">${item.title}</a>
+            <div class="cart-price">${formatPrice(item.price)} ₸</div>
+          </div>
+          <button class="remove-btn" onclick="removeFromCart(${index})">Удалить</button>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function removeFromCart(index) {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      loadCart();
+    }
+
+    loadCart();
+  </script>
+</body>
+</html>

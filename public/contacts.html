@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты | Smart Phone Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/" class="logo-block">
+        <img src="/img/logo.jpeg" alt="Logo" class="site-logo">
+        <span class="site-name">Smart Phone Shop</span>
+      </a>
+      <div class="menu-links">
+        <a href="/">Главная</a>
+        <a href="/about.html">О нас</a>
+        <a href="/cart.html">Корзина</a>
+        <a href="/contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section data-aos="fade-up">
+      <h1>Связаться с нами</h1>
+      <p>Остались вопросы или предложения? Напишите нам — мы всегда рады обратной связи!</p>
+
+      <form class="contact-form" action="https://formspree.io/f/manozwvn" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <p class="form-note">Мы ответим вам в течение 24 часов.</p>
+    </section>
+
+    <section class="social-links" data-aos="fade-up">
+      <h2>Наши контакты</h2>
+      <a href="https://wa.me/77072186223" target="_blank">📱 WhatsApp: +7 707 218 6223</a>
+      <a href="https://t.me/+OgMPrPRaaDYzNjBi" target="_blank">✈️ Telegram</a>
+      <a href="https://www.instagram.com/smartphaneshop" target="_blank">📸 Instagram</a>
+      <a href="mailto:ramazanmuratbek650@gmail.com">📧 Email: ramazanmuratbek650@gmail.com</a>
+      <a href="tel:+77072186223">📞 Позвонить: +7 707 218 6223</a>
+    </section>
+
+    <section class="faq" data-aos="fade-up">
+      <h2>Часто задаваемые вопросы</h2>
+      <ul>
+        <li><strong>📦 Сколько длится доставка?</strong> Обычно от 1 до 3 дней по Казахстану.</li>
+        <li><strong>🔄 Можно ли вернуть товар?</strong> Да, в течение 14 дней при наличии чека и упаковки.</li>
+        <li><strong>💳 Какие способы оплаты?</strong> Kaspi, наличные, банковская карта.</li>
+        <li><strong>🛠 Есть ли гарантия?</strong> Да, до 12 месяцев в зависимости от товара.</li>
+      </ul>
+    </section>
+
+    <section class="map" data-aos="fade-up">
+      <h2>Мы на карте</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.2811625966839!2d76.87063847445165!3d43.214530687473086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883685804a93795%3A0x38849e5598fa1531!2z0J3QsNGA0YXQvtC3!5e0!3m2!1sru!2skz!4v1747842730859!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
